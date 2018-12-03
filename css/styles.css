@@ -1,0 +1,93 @@
+body{
+  margin: 0;
+}
+.heading{
+  text-align: center;
+  color: darkolivegreen;
+  font-weight: 900;
+ align-items: center;
+}
+.heading span{
+  color: rgba(255, 0, 0, 0.671)
+}
+.heading span:hover{
+  color: aqua;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.heading::before{
+  content: "GridX";
+  background: black;
+  font-size: 15px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+.heading::after{
+  content: "GridY";
+  background: red;
+  font-size: 15px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.grid-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , 200px);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 20px;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+.box {
+  background-color: #0069b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 70px;
+  color: white;
+  font-weight: 200;
+  cursor: pointer;
+  box-shadow: 1px 6px 15px 1px black;
+}
+
+.box:hover{
+  color:rgb(190, 22, 22);
+  background: blueviolet;
+  transition: 1s;
+  cursor: pointer;
+  border: 2px solid black;
+transition: 0.8s ease-in;
+}
+.box:before{
+  content: ("hi");
+  color: black;
+  height: 100%;
+  width: 100%;
+  background: red;
+}
+
+.box7{
+  transform: rotate(-8deg);
+}
+.box7:hover{
+  transform: rotate(0deg);
+  transition:.9s;
+  border-radius: 12px;
+}
+li { 
+  cursor: pointer;
+  list-style-type: none;
+  font-weight: bold;
+  color: red;
+}
+
+li:hover {
+   outline: 1px dashed green; 
+}
+.focus{
+color: gray;
+margin-top: 6rem;
+}
